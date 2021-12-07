@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/x-icon" href="public/favicon_io/favicon.ico">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="public/css/chatroom2.css" />
+        <link rel="stylesheet" href="public/css/custom.css" />
+        <script src="public/js/custom.js"></script>
+        <title>Travel Medical Consultant | Conversational Agent Research Study</title>
+    </head>
+    <body>
+        <!-- Image and text -->
+        <nav class="navbar fixed-top navbar-dark bg-dark sticky">
+            <a class="navbar-brand" href="#">
+                Conversational Agent Research Study
+            </a>
+        </nav>
+        <div class="container">
+            <!-- <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border hidden" role="status" id='loader'>
+                            <span class="sr-only hidden">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="row" id='intro'>
+                <div class="col-md-12 col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                          Introduction
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text">
+                            Dear participant, <br/>
+                            Thank you for participating in this study. This study is conducted by the Travel Medical Consultation project of the
+                            Collaborative Development of Conversational Agents course organized by 3 German Universities (University of Hamburg, Saarland University,
+                            Dresden University of Technology). 
+                            <br/>
+                            The purpose is to investigate the difference in the impact of robot-type and human-type chatbots on users.
+                            The study takes about “” minutes and consists of 4 parts. During the whole process, you do not have the possibility to go back to the previous
+                            part. Once you click “Next”, you will be forwarded to the next section and cannot go back. Please do NOT use the back button of your browser.
+                            Please use a laptop for this study. Otherwise, the content is not displayed correctly. As the learning material contains complex English terms
+                            and explanations, you need to have at least a B2 English level to take part.                            
+                          </p>
+                        <a href="#" class="btn btn-primary" id="intro" onclick="next(this, 'consent')">Next</a>
+                        </div>
+                    </div>
+                    <div class="card hidden" id="consent">
+                        <div class="card-header">
+                            Consent
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text">
+                            *With your participation, you declare that we are allowed to use your data for the purpose of our study. The data is stored and used
+                            anonymously. We cannot draw any conclusions about your identity, such as your name, email address, or IP address. No one will know whether
+                            or not you participated in the study. Your participation is voluntary, and nobody is forcing you to take part. You can cancel your
+                            participation in this study at any point in time and do not need to declare the reason. With your participation, you declare that you read
+                            the previous conditions and agree to the following:  
+                            <ul>
+                                <li>I understand the purpose of the research study.</li>
+                                <li>I am participating voluntarily in the research study.</li>
+                                <li>I grant permission to the researchers to use the data generated from this research study for their publications on this topic.</li>
+                                <li>I understand that there will not be any penalty if I withdraw from the research study at any point in time.</li>
+                                <li>I understand that from participating in this study I will not have any direct benefits.</li>
+                                <li>I understand that all my information will be treated confidentially, and will not be shared with anybody besides the researchers.</li>
+                                <li>I understand that none of the information I will provide will be attributed by my name.</li>
+                                <li>I understand that my identity will remain anonymous in all written reports on this research study.</li>
+                                <li>I understand that I can contact the researchers for any further clarifications.</li>
+                            </ul>                          
+                          </p>
+                          <a href="#" class="btn btn-danger" onclick="next(this, 'goodbye')">I disagree</a>
+                          <a href="#" class="btn btn-success" onclick="next(this, 'pre-survey')">I Agree</a>
+                        </div>
+                    </div>
+                    <div class="card hidden" id="pre-survey">
+                        <div class="card-header">
+                            Pre Survey
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text">
+                                                    
+                          </p>
+                          <a href="#" class="btn btn-success" onclick="next(this, 'chat-interface')">Begin</a>
+                        </div>
+                    </div>
+                    <div class="card hidden" id="post-survey">
+                        <div class="card-header">
+                            Post Survey
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text">
+                                                    
+                          </p>
+                          <a href="#" class="btn btn-success" onclick="next(this, 'goodbye')">Submit</a>
+                        </div>
+                    </div>
+                    <div class="card hidden" id="goodbye">
+                        <div class="card-header">
+                            Goodbye
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text">
+                                                    
+                          </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row hidden" id="chat-interface">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="chat-container1"></div>
+                    <a href="#" class="btn btn-success mt-4" onclick="next(this, 'post-survey')">Finish</a>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        <script src="public/js/chatroom.js"></script>
+        <script type="text/javascript">
+            var chatroom = new window.Chatroom({
+                host: "http://localhost:5005",
+                title: "Chat with Alex",
+                container: document.querySelector(".chat-container1"),
+                welcomeMessage: "Hello, I am Alex. How may I help you?",
+                fetchOptions: 'bot'
+            });
+        chatroom.openChat();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+/* Custom CSS */
+
+.container {
+    margin-top: 5rem;
+}
+
+body {
+    background-color: #eeeffe;
+}
+
+.icon-pic {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 100%;
+}
+
+.chat-header {
+    padding: 1rem;
+    background-color: #343d4e;
+    margin-bottom: -0.2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.finish-btn {
+    position: absolute;
+}
+
+#loader {
+    margin-top: 10%;
+}
