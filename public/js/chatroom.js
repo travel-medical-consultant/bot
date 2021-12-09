@@ -24660,7 +24660,7 @@ parcelRequire = function (e, r, t, n) {
                                 }),
                                 key: u,
                                 onClick: null != i ? function () {
-                                    return i(s, u)
+                                    return i(s, s)
                                 } : l.noop
                             }, e.default.createElement(t.default, {
                                 source: s,
