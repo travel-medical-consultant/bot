@@ -48630,7 +48630,7 @@ parcelRequire = function (e, r, t, n) {
         }();
         exports.default = O, b(O, "defaultProps", {
             waitingTimeout: 5e3,
-            messageBlacklist: ["_restart", "_start", "/restart", "/start"]
+            messageBlacklist: ["_start", "/start"]
         });
     }, {
         "react": "1n8/",
