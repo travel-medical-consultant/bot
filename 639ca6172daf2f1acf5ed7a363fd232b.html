@@ -21,15 +21,6 @@
             </a>
         </nav>
         <div class="container">
-            <!-- <div class="row">
-                <div class="col-md-12">
-                    <div class="d-flex justify-content-center">
-                        <div class="spinner-border hidden" role="status" id='loader'>
-                            <span class="sr-only hidden">Loading...</span>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <div class="row" id='intro'>
                 <div class="col-md-12 col-lg-12">
                     <div class="card">
@@ -43,7 +34,7 @@
                             Collaborative Development of Conversational Agents organized by four German Universities, namely Karlsruher Institut für Technologie, Technische Universität Dresden,
                             Universität des Saarlandes and Universität Hamburg. 
                             <br/> <br/>
-                            The purpose of this study is to investigate the difference in the impact of chatbots with and without human-like features on users.
+                            The purpose of this study is to investigate the difference in the impact of travel medical assistant chatbots with and without human-like features on users.
                             The study takes about 20 minutes and consists of three parts. During the whole process, you do not have the possibility to go back to the previous
                             part. Once you click “Next”, you will be forwarded to the next section and cannot go back. We recommend to use a laptop for this survey.
                             As the learning material contains complex English terms and explanations, you need to have at least a B2 English level to take part.                            
@@ -114,7 +105,7 @@
                         </div>
                         <div class="card-body">
                           <p class="card-text">
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdTgUDhrAdQtfERnUR5JPYW87Wr0992z6A73LD90ejL4LSJzA/viewform?embedded=true" width="100%" height="600px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>              
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdTgUDhrAdQtfERnUR5JPYW87Wr0992z6A73LD90ejL4LSJzA/viewform?embedded=true" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>              
                           </p>
                           <a href="#" class="btn btn-success" onclick="next(this, 'chat-interface')">Next</a>
                         </div>
@@ -125,7 +116,7 @@
                         </div>
                         <div class="card-body">
                           <p class="card-text">
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScVWw9mCuu-lSPirvvZZNVWj887isC6D4TPD18KVPxg4ia1PQ/viewform?embedded=true" width="100%" height="600px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>               
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScVWw9mCuu-lSPirvvZZNVWj887isC6D4TPD18KVPxg4ia1PQ/viewform?embedded=true" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>               
                           </p>
                           <a href="#" class="btn btn-success" onclick="next(this, 'goodbye')">Next</a>
                         </div>
@@ -136,7 +127,8 @@
                         </div>
                         <div class="card-body">
                           <p class="card-text">
-                            Thank you for taking part in this research study. Please provide your valuable feedback in the form below.              
+                            Thank you for taking part in this research study. Please provide your valuable feedback in the form below. 
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbrGDtLgTfnhCCqKL_r7ZumjJJ0_zvoqWnoqfQ2UT-Enj5ZA/viewform?embedded=true" width="100%" height="600px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>             
                           </p>
                           <p class="card-text">
 
@@ -149,7 +141,7 @@
             <div class="row hidden" id="chat-interface">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
-                    <p> Write `/restart` to reset the chatbot and `/examples` to get example questions to ask the chatbot. </p>
+                    <p> Write `/restart` to reset the chatbot and `/examples` to get example questions to ask.</p>
                     <div class="chat-container1"></div>
                     <a href="#" class="btn btn-success mt-4" onclick="next(this, 'post-survey')">Next</a>
                 </div>
@@ -159,8 +151,8 @@
         <script src="public/js/chatroom.js"></script>
         <script type="text/javascript">
             var chatroom = new window.Chatroom({
-                host: "https://1c81-34-159-29-251.ngrok.io",
-                title: "Chat with Alex",
+                host: "http://localhost:5005",
+                title: "Chat",
                 container: document.querySelector(".chat-container1"),
                 welcomeMessage: "Hello!",
                 fetchOptions: 'bot'
