@@ -28,3 +28,9 @@ function next(node, load){
     node.parentNode.parentNode.style.display = 'none';
     document.getElementById(load).classList.remove('hidden');
 };
+
+function enable(node) {
+    if (node.checked) {
+        document.getElementById('start').classList.remove('disabled');
+    } 
+}

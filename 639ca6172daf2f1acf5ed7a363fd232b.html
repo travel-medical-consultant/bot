@@ -85,7 +85,7 @@
                                 In this part, you will chat with a travel medical consultant chatbot. For this task, you can consider any of the following three scenarios.
                                     <ul>
                                         <li> You are traveling to Australia from any other country. </li>
-                                        <li> You are traveling to Sudan from any ther country. </li>
+                                        <li> You are traveling to South Sudan from any other country. </li>
                                         <li> You are traveling to Ethiopia from any other country. </li>
                                     </ul>
                                     <b>We recommend you to consider two or more scenarios. To restart the chat, you can message `/restart` to the chatbot.</b>
@@ -95,8 +95,13 @@
                                 In this section, you will be asked questions related to your experience in using the chatbot. You will also be asked to retake the Knowledge
                                 Retention Test.
                                 <b>Please make sure to submit the Google form before proceeding to the next section.</b>
+                                <br/><br/>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="check" onchange="enable(this)">
+                                    <label class="form-check-label" for="check">I have read the instructions carefully.</label>
+                                </div>
                             </p>
-                            <a href="#" class="btn btn-success" onclick="next(this, 'pre-survey')">Start</a>
+                            <a href="#" class="btn btn-success disabled" onclick="next(this, 'pre-survey')">Start</a>
                         </div>
                     </div>
                     <div class="card hidden" id="pre-survey">
