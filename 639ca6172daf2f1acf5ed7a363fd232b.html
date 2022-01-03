@@ -97,11 +97,11 @@
                                 <b>Please make sure to submit the Google form before proceeding to the next section.</b>
                                 <br/><br/>
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="check" onchange="enable(this)">
+                                    <input type="checkbox" class="form-check-input" id="check" onchange="enable(this, 'to-enable-1')">
                                     <label class="form-check-label" for="check">I have read the instructions carefully.</label>
                                 </div>
                             </p>
-                            <a href="#" class="btn btn-success disabled" onclick="next(this, 'pre-survey')" id="start">Start</a>
+                            <a href="#" class="btn btn-success disabled" onclick="next(this, 'pre-survey')" id="to-enable-1">Start</a>
                         </div>
                     </div>
                     <div class="card hidden" id="pre-survey">
@@ -112,7 +112,12 @@
                           <p class="card-text">
                             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdTgUDhrAdQtfERnUR5JPYW87Wr0992z6A73LD90ejL4LSJzA/viewform?embedded=true" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>              
                           </p>
-                          <a href="#" class="btn btn-success" onclick="next(this, 'chat-interface')">Next</a>
+                          <br/><br/>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="check" onchange="enable(this, 'to-enable-2')">
+                            <label class="form-check-label" for="check">I have submitted the form.</label>
+                        </div>
+                          <a href="#" class="btn btn-success disabled" onclick="next(this, 'chat-interface')" id="to-enable-2">Next</a>
                         </div>
                     </div>
                     <div class="card hidden" id="post-survey">
@@ -123,7 +128,12 @@
                           <p class="card-text">
                             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScVWw9mCuu-lSPirvvZZNVWj887isC6D4TPD18KVPxg4ia1PQ/viewform?embedded=true" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>               
                           </p>
-                          <a href="#" class="btn btn-success" onclick="next(this, 'goodbye')">Next</a>
+                          <br/><br/>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="check" onchange="enable(this, 'to-enable-3')">
+                                <label class="form-check-label" for="check">I have submitted the form.</label>
+                            </div>
+                          <a href="#" class="btn btn-success disabled" onclick="next(this, 'goodbye')" id="to-enable-3">Next</a>
                         </div>
                     </div>
                     <div class="card hidden" id="goodbye">

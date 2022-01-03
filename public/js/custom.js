@@ -29,8 +29,8 @@ function next(node, load){
     document.getElementById(load).classList.remove('hidden');
 };
 
-function enable(node) {
+function enable(node, button) {
     if (node.checked) {
-        document.getElementById('start').classList.remove('disabled');
+        document.getElementById(button).classList.remove('disabled');
     } 
 }
