@@ -37,7 +37,9 @@
                             The purpose of this study is to investigate the difference in the impact of travel medical assistant chatbots with and without human-like features on users.
                             The study takes about 20 minutes and consists of three parts. During the whole process, you do not have the possibility to go back to the previous
                             part. Once you click “Next”, you will be forwarded to the next section and cannot go back. We recommend to use a laptop for this survey.
-                            As the learning material contains complex English terms and explanations, you need to have at least a B2 English level to take part.                            
+                            As the learning material contains complex English terms and explanations, you need to have at least a B2 English level to take part.  
+                            <br/> <br/>
+                            The information provided by the chatbot are taken from these <a href="references.html" target="_blank">sources</a>.                          
                           </p>
                         <a href="#" class="btn btn-primary" id="intro" onclick="next(this, 'consent')">Next</a>
                         </div>
@@ -78,6 +80,8 @@
                                 The following survey consists of three main parts.
                                 <h3>Pre-survey</h3>
                                 In this section, you will be asked about your travel and chatbot use experience, followed by a multiple choice single answer Knowledge Retention Test.
+                                These questions are related to travel medicine such as vaccine requirements, travel health tips. Please answer these questions to the best of the knowledge
+                                you have.
                                 <b>Please make sure to submit the Google form before proceeding to the next section.</b>
                                 <br/><br/>
                                 <h3>Chat with Chatbot</h3>
@@ -87,12 +91,18 @@
                                         <li> You are traveling to South Sudan from any other country. </li>
                                         <li> You are traveling to Ethiopia from any other country. </li>
                                     </ul>
-                                    <b>We recommend you to consider two or more scenarios. To restart the chat, you can message `/restart` to the chatbot.</b>
-                                    <b>We recommend you to chat with the chatbot for more than two minutes.</b>
+                                    <h3>Recommendations</h3>
+                                    <ul>
+                                        <li><b>We recommend you to consider two or more scenarios. To start a new scenario you can message `/restart` to the chatbot. This will reset
+                                            the information stored by the chatbot.
+                                        </b></li>
+                                        <li><b>You can message "/examples" to the chatbot to get examples of questions to ask. You can use this multiple times.</b></li>
+                                        <li><b>We recommend you to chat with the chatbot for more than two minutes.</b></li>
+                                    </ul>
                                 <br/><br/>
                                 <h3>Post-survey</h3>
-                                In this section, you will be asked questions related to your experience in using the chatbot. You will also be asked to retake the Knowledge
-                                Retention Test.
+                                In this section, you will be asked questions related to your experience in using the chatbot. You will again be asked to retake the same Knowledge
+                                Retention Test as in the Pre-Survey section. 
                                 <b>Please make sure to submit the Google form before proceeding to the next section.</b>
                                 <br/><br/>
                                 <div class="form-group form-check">
@@ -108,26 +118,34 @@
                             Pre Survey
                         </div>
                         <div class="card-body">
+                            <ul>
+                                <li>Please note that Gmail account is not required to fill the survey form.</li>
+                                <li>After submitting the survey form, scroll down to check 'I have submitted the form." checkbox. Then click on 'Next'.</li>
+                            </ul>
                           <p class="card-text">
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdpK6zntBipkWS3MLs0eIkDlw9kj4sHFC4wiIQ9ifjTJip4ag/viewform?embedded=true" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdTgUDhrAdQtfERnUR5JPYW87Wr0992z6A73LD90ejL4LSJzA/viewform?embedded=true" width="100%" height="600px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>              
                           </p>
                           <br/><br/>
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="check" onchange="enable(this, 'to-enable-2')">
-                                <label class="form-check-label" for="check">I have submitted the form.</label>
-                            </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="check" onchange="enable(this, 'to-enable-2')">
+                            <label class="form-check-label" for="check">I have submitted the form.</label>
+                        </div>
                           <a href="#" class="btn btn-success disabled" onclick="next(this, 'chat-interface')" id="to-enable-2">Next</a>
                         </div>
                     </div>
                     <div class="card hidden" id="post-survey">
+                        <ul>
+                            <li>Please note that Gmail account is not required to fill the survey form.</li>
+                            <li>After submitting the survey form, scroll down to check 'I have submitted the form." checkbox. Then click on 'Next'.</li>
+                        </ul>
                         <div class="card-header">
                             Post Survey
                         </div>
                         <div class="card-body">
                           <p class="card-text">
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScTP9keaKOGXsmTswwWpSs2_BXEDewMRQ133wEScZ6pZGXzzQ/viewform?embedded=true" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                           </p>
-                           <br/><br/>
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScVWw9mCuu-lSPirvvZZNVWj887isC6D4TPD18KVPxg4ia1PQ/viewform?embedded=true" width="100%" height="600px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>               
+                          </p>
+                          <br/><br/>
                             <div class="form-group form-check">
                                 <input type="checkbox" class="form-check-input" id="check" onchange="enable(this, 'to-enable-3')">
                                 <label class="form-check-label" for="check">I have submitted the form.</label>
@@ -141,11 +159,8 @@
                         </div>
                         <div class="card-body">
                           <p class="card-text">
-                            Thank you for taking part in this research study. Please provide your valuable feedback in the form below. 
+                            Thank you for taking part in this research study. Please provide your valuable feedback in the form below (optional). 
                             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbrGDtLgTfnhCCqKL_r7ZumjJJ0_zvoqWnoqfQ2UT-Enj5ZA/viewform?embedded=true" width="100%" height="600px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>             
-                          </p>
-                          <p class="card-text">
-
                           </p>
                         </div>
                     </div>
@@ -153,13 +168,33 @@
             </div>
             <br/>
             <div class="row hidden" id="chat-interface">
-                <div class="col-md-3"></div>
                 <div class="col-md-6">
-                    <p> Write `/restart` to reset the chatbot and `/examples` to get example questions to ask.</p>
+                    <h1> Instructions</h1>
+                    <ul>
+                        <li> 
+                            Please consider one of the following three scenarios when chatting with the chatbot: 
+                            <ul>
+                                <li> You are traveling to Australia from any other country. </li>
+                                <li> You are traveling to South Sudan from any other country. </li>
+                                <li> You are traveling to Ethiopia from any other country. </li>
+                            </ul>
+                        </li>
+                        <li>To start a new scenario you can message `/restart` to the chatbot. This will reset
+                            the information stored by the chatbot.
+                        </li>
+                        <li>You can message "/examples" to the chatbot to get examples of questions to ask. </li>
+                    </ul>
+                    <h1> Recommendations </h1>
+                    <ul>
+                        <li>We recommend you to <b>consider two or more scenarios</b>. </li>
+                        <li>Use "/examples" to get example questions. Use it as many times as you like. </li>
+                        <li>Chat with the chatbot for <b>more than two mintues</b> exploring different questions related to the topic.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
                     <div class="chat-container2"></div>
                     <a href="#" class="btn btn-success mt-4" onclick="next(this, 'post-survey')">Next</a>
                 </div>
-                <div class="col-md-3"></div>
             </div>
         </div>
         <script src="public/js/chatroom.js"></script>
@@ -168,7 +203,11 @@
                 host: "https://d615-34-140-123-71.ngrok.io",
                 title: "Chat with Alex",
                 container: document.querySelector(".chat-container2"),
-                welcomeMessage: "Hello, my name is Alex. I am a Travel Medical Consultant bot.",
+                welcomeMessage: "Hello, my name is Alex and I am a Travel Medical Consultant bot. You can ask me about \n \
+                    - travel vaccination information for Australia, Sudan and Ethiopia \n \
+                    - COVID-19 and Yellow Fever vaccination information \n \
+                    - other travel health tips and precautions \n \
+                    How can I help you? 🙂 "
             });
         chatroom.openChat();
         </script>
